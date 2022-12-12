@@ -1,0 +1,220 @@
+.c-item {
+  height: 100vh;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+.img-hero {
+  width: 80%;
+}
+
+.navbar {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(14, 174, 87, 1) 0%, rgba(12, 116, 117, 1) 90%);
+}
+.navbar-nav a {
+  padding: 10px;
+  width: 110px;
+  height: 50px;
+}
+.navbar-nav a:hover {
+  text-align: center;
+  border: 2px solid rgb(14, 235, 32);
+  color: rgb(14, 235, 32);
+}
+
+#jumbotron {
+  padding: 20rem 1rem;
+}
+
+#tentang {
+  padding: 4rem 1rem;
+}
+
+#produk {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(14, 174, 87, 1) 0%, rgba(12, 116, 117, 1) 90%);
+  padding: 2rem 1rem;
+}
+
+#testimoni {
+  padding: 100px 0;
+}
+
+.sub-title {
+  font-size: 18px;
+}
+.card-testi {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in;
+  margin-bottom: 10px;
+}
+.card-testi h3 {
+  color: #000000;
+  font-size: 24px;
+  transition: all 0.2s ease-in;
+}
+.card-testi p {
+  color: #000000;
+  font-size: 14px;
+  transition: all 0.3s ease-in;
+}
+
+.circle-icon {
+  width: 70px;
+  height: 70px;
+  transition: all 0.1s ease-in;
+}
+
+/* hover */
+.card-testi:hover {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #242c2a;
+  padding: 20px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in;
+}
+.card-testi:hover h3 {
+  color: #fff;
+  font-size: 24px;
+  transition: all 0.2s ease-in;
+}
+.card-testi:hover p {
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.2s ease-in;
+}
+
+.circle-icon:hover {
+  width: 70px;
+  height: 70px;
+  transition: all 0.2s ease-in;
+}
+
+#kontak {
+  height: 85vh;
+  padding: 2rem 1rem;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(14, 174, 87, 1) 0%, rgba(12, 116, 117, 1) 90%);
+}
+@media screen and (min-width: 576px) {
+  #tentang {
+    height: 90vh;
+  }
+  #testimoni {
+    height: 90vh;
+  }
+  #kontak {
+    height: 85vh;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(14, 174, 87, 1) 0%, rgba(12, 116, 117, 1) 90%);
+  }
+}
+
+.btn-kirim {
+  width: 100%;
+  color: #fff;
+}
+
+/* button */
+button {
+  background-color: rgb(14, 235, 32);
+  background-image: linear-gradient(45deg, rgb(14, 235, 32) 0%, #2767e9 50%, #bbff00 100%);
+
+  background-size: 800% 400%;
+  padding: 1em 2em;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+
+button:hover {
+  animation: gradient 3s infinite;
+  transform: scale(1.05);
+}
+
+button:active {
+  animation: gradient 3s infinite;
+  transform: scale(0.8);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* penutup button */
+
+/* input */
+.inputbox {
+  position: relative;
+}
+
+.inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  font-size: 1em;
+  color: #ffffff;
+  letter-spacing: 00.05em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span {
+  color: rgb(14, 235, 32);
+  transform: translateX(-10px) translateY(-34px);
+  font-size: 0, 75em;
+}
+
+.inputbox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(14, 235, 32);
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputbox input:valid ~ i,
+.inputbox input:focus ~ i {
+  height: 44px;
+}
+/* penutup input */
